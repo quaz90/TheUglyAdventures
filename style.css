@@ -1,0 +1,64 @@
+body{
+    font-family: 'Nunito', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
+    background-image: url(./assets/pictures/mountain_4_big.jpg);
+}
+
+/* CSS Tags */
+:root{
+    --det-color: #7D98A1;
+    --sec-color: #5E6572;
+    --acc-color: #A9B4C2;
+    --black-color: #1C2321;
+    --white-color: #EEF1EF;
+    --sec-shadow: rgba(28, 35, 33, 0.1);
+}
+
+/* Colors definition */
+/* text */
+.tx-det{
+    color: var(--det-color) !important;
+}
+.tx-sec{
+    color: var(--sec-color) !important;
+}
+.tx-sec-blur{
+    color: var(--sec-color) !important;
+}
+.tx-acc{
+    color: var(--acc-color) !important;
+}
+.tx-black{
+    color: var(--black-color) !important;
+}
+.tx-white{
+    color: var(--white-color) !important;
+}
+
+/* background */
+.bg-det{
+    background-color: var(--det-color) !important;
+}
+.bg-sec{
+    background-color: var(--sec-color) !important;
+}
+.bg-acc{
+    background-color: var(--acc-color) !important;
+}
+.bg-black{
+    background-color: var(--black-color) !important;
+}
+.bg-white{
+    background-color: var(--white-color) !important;
+}
+
+
+/* BOOTSTRAP OVVERIDES */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler:hover {
+background-color: rgba(28, 35, 33, 0.1);
+/* box-shadow: 3px 3px 5px var(--acc-color); */
+transition: 0.5s;
+}
