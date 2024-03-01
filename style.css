@@ -1,6 +1,6 @@
 body{
     font-family: 'Nunito', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
-    background-image: url(./assets/pictures/mountain_4_big.jpg);
+    /* background-image: url(./assets/pictures/mountain_4_big.jpg); */
 }
 
 /* CSS Tags */
@@ -11,6 +11,9 @@ body{
     --black-color: #1C2321;
     --white-color: #EEF1EF;
     --sec-shadow: rgba(28, 35, 33, 0.1);
+    --det-shadow: rgba(125, 162, 161, 0.1);
+  
+    
 }
 
 /* Colors definition */
@@ -33,7 +36,7 @@ body{
 .tx-white{
     color: var(--white-color) !important;
 }
-
+ 
 /* background */
 .bg-det{
     background-color: var(--det-color) !important;
@@ -51,14 +54,100 @@ body{
     background-color: var(--white-color) !important;
 }
 
+.nav-white{
+    background-color: rgba(238, 241, 239, 0.3) !important;
+}
+
 
 /* BOOTSTRAP OVVERIDES */
+
+.offcanvas {
+    transition: transform 1s ease-in-out !important;
+}
+
 .navbar-toggler:focus {
     box-shadow: none !important;
 }
 
-.navbar-toggler:hover {
-background-color: rgba(28, 35, 33, 0.1);
-/* box-shadow: 3px 3px 5px var(--acc-color); */
-transition: 0.5s;
+.btn-close:focus{
+    box-shadow: none !important;
 }
+
+.navbar-toggler:hover {
+    background-color: rgba(28, 35, 33, 0.1);
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    background-color: rgba(28, 35, 33, 0.1);
+    color:var(--white-color) !important;
+}
+
+.search-box{
+    box-shadow: none !important;
+    border-style: none !important;
+    transition: 0.5s;
+} 
+
+.search-box:hover{
+    color: var(--white-color);
+    box-shadow: none !important;
+    border-style: none !important;
+    transition: 0.5s;
+    background-color: rgba(28, 35, 33, 0.1) !important;
+} 
+
+.form-control:focus{
+    box-shadow: none !important;
+    border-style: none !important;
+} 
+
+.btn-search{
+    background-color: var(--det-color) !important;
+    transition: 0.5s;
+}
+.btn-search:hover{
+    background-color: var(--sec-color) !important;
+    transition: 0.5s;
+}
+
+.btn-login{
+    font-size: 15px !important;
+    background-color: var(--det-color) !important;
+    transition: 0.5s;    
+}
+
+.btn-login:hover{
+    background-color: var(--sec-color) !important;
+    transition: 0.5s;
+}
+
+.fs-7{
+    font-size: 5px !important;
+}
+
+.slide1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/pictures/mountain_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.slide2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/pictures/mountain_2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.slide3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/pictures/mountain_3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+

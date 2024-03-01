@@ -1,92 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ugly Adventures</title>
-    <!-- STYLE.CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- CDN BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- CDN FONT AWSOME ICONS -->
-    <script src="https://kit.fontawesome.com/38915df12d.js" crossorigin="anonymous"></script>
-    <!-- CDB BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- CDN GOOGLE FONTS -->
-    <!-- Varela Round -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <!-- Nunito -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ugly Adventures</title>
+  <!-- STYLE.CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- CDN BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- CDN FONT AWSOME ICONS -->
+  <script src="https://kit.fontawesome.com/38915df12d.js" crossorigin="anonymous"></script>
+  <!-- CDB BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- CDN GOOGLE FONTS -->
+  <!-- Varela Round -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <!-- Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/logo/mountain_64.png" alt="" class="d-inline-block align-text-top"> 
-                THE UGLY ADVENTURES
-            </a>
-            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="bi bi-list-nested tx-black fs-3 "></i>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-5">
-                    <a class="nav-link active mx-4" aria-current="page" href="#">About</a>
-                    <a class="nav-link mx-4" href="#">Projects</a>
-                    <a class="nav-link mx-4" href="#">Contacts</a>          
-                    <a class="nav-link mx-4" href="#">Log-in</a>          
-                </div>
-            </div>
+  
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo/mountain_64.png" alt="" class="d-inline-block align-text-top"> 
+        THE UGLY ADVENTURES
+      </a>
+      <button class="navbar-toggler border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list-nested tx-black fs-3 "></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-5">
+          <a class="nav-link active mx-4 rounded-2 p-2" aria-current="page" href="#">About</a>
+          <a class="nav-link mx-4 rounded-2 p-2" href="#">Projects</a>
+          <a class="nav-link mx-4 rounded-2 p-2" href="#">Contacts</a>          
+          <a class="nav-link mx-4 rounded-2 p-2" href="#loginModal" data-bs-target="#loginModal" data-bs-toggle="modal">Log-in</a>   
+          <a class="nav-link mx-4 rounded-2 p-2" href="#searchModal" data-bs-target="#searchModal" data-bs-toggle="modal"><img src="./assets/Icons/search.png" alt=""></a>   
+          
         </div>
-    </nav>
-    <!-- OFFCANVAS NAVBAR MOBILE -->
+      </div>
+    </div>
+  </nav>
+  
+  <!-- OFFCANVAS NAVBAR MOBILE -->
+  <div class="offcanvas offcanvas-end bg-det tx-black" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" data-bs-scroll="true">
+    <div class="offcanvas-header justify-content-between">
+      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">The Ugly Adventures</h5>
+      <button type="button" class="navbar-toggler border-0 tx-black fs-3 rounded rounded-1 p-2" data-bs-dismiss="offcanvas" aria-label="Close"> 
+        <i class="bi bi-arrow-bar-right"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log-In</a>
+        </li>
+        
+      </li>
+    </ul>
+    </div>
+  </div>
 
-          <div class="offcanvas offcanvas-end bg-det tx-black" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-              <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contacts</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Log-In</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    <!-- LOGIN MODALE -->
-    <!-- HERO -->
-    <!-- ABOUT -->
-    <!-- PROJECT -->
-    <!-- CONTACTS -->
-    
-    <!-- FOOTER -->
-    
-    
-    
-    
-    
-    
-    
-    <!-- CDN BOOTSTRAPSCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- LOGIN MODALE -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content border border-0">
+      <div class="modal-body  rounded-2 p-2 bg-acc">
+        <form class="d-flex justify-content-between " role="search">
+          <input class="form-control me-2 bg-acc search-box" type="search" placeholder="Email" aria-label="Search">
+          <input class="form-control me-2 bg-acc search-box" type="search" placeholder="Password" aria-label="Search">
+          <button class="btn btn-login" type="button">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEARCH MODALE -->
+<div class="modal fade  " id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content border border-0">
+      <div class="modal-body  rounded-2 p-2 bg-acc">
+        <form class="d-flex " role="search">
+          <input class="form-control me-2 bg-acc search-box" type="search" placeholder="Look for an Adventure..." aria-label="Search">
+          <button class="btn btn-search" type="button"><img class="m-auto " src="./assets/Icons/search.png" alt=""></button>
+        </form>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<!-- HERO -->
+<div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active slide1">
+      <div class="carousel-caption">
+        <h5>Go Beyond</h5>
+        <p>Look over the limits you can reach</p>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item slide2">
+      <div class="carousel-caption">
+        <h5>Get Inspired</h5>
+        <p>Discover new places, embrace the nature</p>
+      </div>
+    </div>
+    <div class="carousel-item slide3">
+      <div class="carousel-caption">
+        <h5>Do More</h5>
+        <p>Find yourself by creating and doing</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+  </button>
+</div>
+<!-- ABOUT -->
+<!-- PROJECT -->
+<!-- CONTACTS -->
+
+<!-- FOOTER -->
+
+
+
+
+
+
+
+<!-- CDN BOOTSTRAPSCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
