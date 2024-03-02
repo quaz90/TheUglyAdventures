@@ -53,7 +53,6 @@ body{
 .bg-white{
     background-color: var(--white-color) !important;
 }
-
 .nav-white{
     background-color: rgba(238, 241, 239, 0.3) !important;
 }
@@ -134,7 +133,6 @@ body{
     background-size: cover;
 }
 
-
 .slide2 {
     height: 100vh;
     width: 100%;
@@ -142,6 +140,7 @@ body{
     background-position: center;
     background-size: cover;
 }
+
 .slide3 {
     height: 100vh;
     width: 100%;
@@ -149,5 +148,28 @@ body{
     background-position: center;
     background-size: cover;
 }
+
+.card-trans:hover{
+transform:scale(1.02);
+transition: 0.5s;
+background-color: var(--acc-color) !important;
+color: var(--black-color) !important;
+margin-bottom: 3px solid var(--black-color);
+}
+.card-trans{
+transition: 0.5s;
+}
+
+.card img{
+   width: 100%;
+}
+
+.card div{
+    height: 20%;
+}
+
+/* .card-bg{
+    padding: 0px !important;
+} */
 
 
