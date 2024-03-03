@@ -12,12 +12,14 @@ body{
     --white-color: #EEF1EF;
     --sec-shadow: rgba(28, 35, 33, 0.1);
     --det-shadow: rgba(125, 162, 161, 0.1);
-  
+    
     
 }
 
 /* Colors definition */
 /* text */
+
+
 .tx-det{
     color: var(--det-color) !important;
 }
@@ -36,7 +38,7 @@ body{
 .tx-white{
     color: var(--white-color) !important;
 }
- 
+
 /* background */
 .bg-det{
     background-color: var(--det-color) !important;
@@ -59,6 +61,17 @@ body{
 
 
 /* BOOTSTRAP OVVERIDES */
+.title{
+
+    transition: 0.5s;
+}
+.title:hover{
+    background-color: var(--det-color);
+    color: var(--black-color) !important;
+    transition: 0.5s;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--black-color) !important;
+}
 
 .offcanvas {
     transition: transform 1s ease-in-out !important;
@@ -150,26 +163,48 @@ body{
 }
 
 .card-trans:hover{
-transform:scale(1.02);
-transition: 0.5s;
-background-color: var(--acc-color) !important;
-color: var(--black-color) !important;
-margin-bottom: 3px solid var(--black-color);
+    transform:scale(1.02);
+    transition: 0.5s;
+    /* background-color: var(--acc-color) !important; */
+    color: black !important;
+    /* margin-bottom: 3px solid var(--black-color); */
+    box-shadow: 2px 2px 5px var(--sec-color);
 }
+
+.card .card-body p{
+    transition: 0.5s;
+    color: var(--white-color) !important;
+}
+.card .card-body:hover{
+    p{
+        transition: 0.5s;
+        color: var(--black-color) !important;
+    }
+    transition: 0.5s;
+    background-color: var(--acc-color) !important;
+}
+
 .card-trans{
-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .card img{
-   width: 100%;
+    width: 100%;
 }
 
 .card div{
     height: 20%;
 }
 
-/* .card-bg{
-    padding: 0px !important;
-} */
+.destination-sticky{
+    position: sticky;
+    top:100px;
+}
 
+.signup-section{
+    background-image: url(./assets/pictures/mountain_4_big.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
 
